@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UzbEngTranslator</string>
+    <string name="uz">uz</string>
+    <string name="en">en</string>
+    <string name="str_loading_word">Loading</string>
+    <string name="str_save">Save</string>
+    <string name="str_google">Google</string>
+    <string name="str_translate">Translate</string>
+    <string name="str_gmail_start">J</string>
+    <string name="str_enter_text_hint">Enter text</string>
+    <string name="str_uzbek">Uzbek</string>
+    <string name="str_english">English</string>
+    <string name="str_saved_words">Saved words</string>
+</resources>
