@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     is UiStateObject.SUCCESS -> {
-                        isUzWordEntered = if (
+                        if (
                             it.data.data.detections[0][0].language == getString(
                                 R.string.uz
                             )
@@ -93,13 +93,19 @@ class MainActivity : AppCompatActivity() {
                                 getString(R.string.uz),
                                 getString(R.string.en)
                             )
-                            true
+                            isUzWordEntered = true
                         } else {
-                            false
+                            isUzWordEntered = false
+                            Toast.makeText(
+                                this@MainActivity,
+                                "O'zbekcha so'z emas",
+                                Toast.LENGTH_SHORT
+                            ).show()
                         }
                     }
                     is UiStateObject.ERROR -> {
-                        Log.d("TAG", "setupUI: ${it.message}")
+                        Toast.makeText(this@MainActivity, "${it.message}", Toast.LENGTH_SHORT)
+                            .show()
                     }
                     else -> {
 

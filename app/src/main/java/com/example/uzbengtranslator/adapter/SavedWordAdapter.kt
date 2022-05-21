@@ -45,19 +45,11 @@ class SavedWordAdapter(private val onItemSwipedToRemove: ((Int) -> Unit)) :
         onItemSwipedToRemove.invoke(savedWords[position].id!!)
         savedWords.removeAt(position)
         notifyItemRemoved(position)
-        Log.d("TAG", "onItemSwipe: $position ${this.savedWords}")
     }
 
     fun submitData(savedWords: ArrayList<SavedWord>) {
         this.savedWords.clear()
         this.savedWords.addAll(savedWords)
         notifyDataSetChanged()
-        Log.d("TAG", "onItemSwipe: ${this.savedWords}")
     }
-
-    fun submitSingleData(savedWord: SavedWord){
-        this.savedWords.add(savedWord)
-        notifyItemInserted(savedWords.size)
-    }
-
 }

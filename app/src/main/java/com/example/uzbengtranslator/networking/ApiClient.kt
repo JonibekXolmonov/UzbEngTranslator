@@ -51,7 +51,7 @@ object ApiClient {
                 builder.addHeader("X-RapidApi-Host", "google-translate1.p.rapidapi.com")
                 builder.addHeader(
                     "X-RapidAPI-Key",
-                    "a14f28c32amsh4de33ecf03398d1p172262jsnb3ef54be00e4"
+                    "1d80bf1ff9msh0d31db79d33ada7p19c1a4jsncd446a9b3482"
                 )
                 request = builder.build()
                 chain.proceed(request)
@@ -63,13 +63,14 @@ object ApiClient {
     val translateService = createServiceWithAuth(ApiService::class.java)
 }
 //monthly-expired keys
-//m1 a13d4a1df5mshabfff98a5286afep1d4fbajsnf99012f5069e
-//f1 a659dd93c9mshaac7183703db858p175b73jsn7ed7826565b3
+//m1   a13d4a1df5mshabfff98a5286afep1d4fbajsnf99012f5069e
+//f1   a659dd93c9mshaac7183703db858p175b73jsn7ed7826565b3
 //f2   730158c851msh3ce875139e8bf95p1d1292jsnf1d7f51b0b7e
 //f3   9be309c338msh52e38355b1e272dp180cd4jsn7db2a798a94c
 
-//working keys
-
+//less requests remaining
 //m2   a14f28c32amsh4de33ecf03398d1p172262jsnb3ef54be00e4
+
+//working keys
 //m3   1d80bf1ff9msh0d31db79d33ada7p19c1a4jsncd446a9b3482
 //m4   2884463498mshc47a34bd2a99c87p19e93cjsnae5958b64657
